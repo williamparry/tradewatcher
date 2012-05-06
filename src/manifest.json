@@ -1,0 +1,20 @@
+{
+	"name": "Trade Watcher uncompressed",
+	"description": "Check your Trade Me Watchlist from your toolbar.",
+	"version": "0.3",
+	"permissions": ["http://*/","https://tradewatcher-proxy.appspot.com/*","tabs","notifications"],
+	"background_page": "background.html",
+	"icons": { "16": "img/logo.ico", "48": "img/logo.png", "128": "img/logo.png" },
+	"minimum_chrome_version": "7",
+	"browser_action": {
+		"default_icon" : "img/logo.ico",
+		"popup" : "popup.html"
+	},
+	"content_scripts": [
+	    {
+	      "matches": ["http://secure.trademe.co.nz/oauth/authorize?oauth_token=*&oauth_verifier=*", "https://secure.trademe.co.nz/oauth/authorize?oauth_token=*&oauth_verifier=*"],
+	      "js": ["js/verifier.js"]
+	    }
+	  ]
+	
+}

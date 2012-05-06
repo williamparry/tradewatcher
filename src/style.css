@@ -1,0 +1,154 @@
+body 
+{
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+#wrap 
+{
+	padding-right: 10px;
+	width: 550px;
+	min-height: 300px;
+	max-height: 410px;
+	overflow: auto;
+}
+
+.wrap-inactive
+{
+	opacity: 0.25;
+	overflow: hidden !important;
+}
+
+nav 
+{
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 2px solid #ff9900;
+}
+nav li 
+{
+	border: 1px solid #ccc;
+	background: #eaeaea;
+	position: relative;
+	bottom: -2px;
+	border-bottom: none;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+	cursor: pointer;
+	color: #0033cc;
+}
+nav li:not(.active):hover
+{
+	color: #ff6600;
+	text-decoration: underline;
+}
+nav li.active 
+{
+	bottom: -2px;
+	border: 2px solid #ff9900;
+	border-bottom-color: #fff;
+	background: #fff;
+	cursor: default;
+	color: #000;
+}
+
+#content
+{
+	border-bottom: 2px solid #dddddd;
+	margin-top: 10px;
+}
+
+.status
+{
+	font-size: 11px;
+	display: block;
+	background: #f5f5f5;
+	padding: 5px;
+}
+
+.content-item 
+{
+	border-top: 2px solid #dddddd;
+	padding: 5px;
+}
+
+.content-item:nth-child(odd) 
+{
+	background: #f5f5f5;
+}
+
+.content-item img, .content-item .title, .content-item .bid-information
+{
+	float: left;
+}
+
+.content-item img
+{
+	display: block;
+}
+
+.content-item .title
+{
+	margin-left: 10px;
+	width: 300px;
+}
+
+.content-item .title a
+{
+	font-size: 12px;
+	display: inline-block;
+}
+
+.content-item .title small
+{
+	margin-top: 5px;
+	font-size: 11px;
+	color: #666;
+	display: block;
+}
+
+.content-item .bid-information
+{
+	margin-left: 10px;
+}
+
+.content-item .bid-information div
+{
+	font-size: 20px;
+}
+
+.content-item .bid-information small
+{
+	display: block;
+	margin-top: 5px;
+	font-size: 11px;
+	
+}
+
+.content-item .bid-information small.reserve-met 
+{
+	text-transform: uppercase;
+	font-size: 9px;
+	color: Red;
+}
+
+.content-item .bid-information small.leading
+{
+	color: Green;
+}
+
+.content-item .bid-information small.outbid
+{
+	color: #ff9900;
+}
+
+.closing-soon
+{
+	color: red !important;
+}
+
+.clear 
+{
+	font-size: 0px;
+	clear: both;
+	height: 0px;
+}
